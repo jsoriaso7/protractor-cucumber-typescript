@@ -13,6 +13,10 @@ export const config: Config = {
 
     capabilities: {
         browserName: "chrome",
+        chromeOptions:{
+            binary:"/var/jenkins_home/tools/chrome-linux",
+            args:["--headless", "--disable-gpu", "--remote-debugging-port=4444"]
+        }
     },
 
     framework: "custom",
