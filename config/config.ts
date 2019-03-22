@@ -19,7 +19,8 @@ export const config: Config = {
             args:["--headless", "--disable-gpu", "--remote-debugging-port=4444"]
         }
     },
-
+    seleniumServerJar: "/var/jenkins_home/workspace/PipeLine Hello World/node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-3.141.59.jar",
+    
     framework: "custom",
     frameworkPath: require.resolve("protractor-cucumber-framework"),
 
