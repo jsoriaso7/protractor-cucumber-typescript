@@ -16,7 +16,7 @@ export const config: Config = {
         browserName: "chrome",
         chromeOptions:{
             binary:"/var/jenkins_home/tools/chrome-linux",
-            args:["--headless", "--disable-gpu", "--remote-debugging-port=4444"]
+            args:["--headless", "--no-sandbox", "--disable-gpu", "--remote-debugging-port=4444"]
         }
     },
     seleniumServerJar: "/var/jenkins_home/workspace/PipeLine Hello World/node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-3.141.59.jar",
