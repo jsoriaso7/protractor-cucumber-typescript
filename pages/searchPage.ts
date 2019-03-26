@@ -6,7 +6,7 @@ export class SearchPageObject {
     public logo: ElementFinder;
 
     constructor() {
-        this.searchTextBox = $("input[title='Search']");
+        this.searchTextBox = $("input[title='Buscar']");
         this.searchButton = $("input[value='Google Search']");
         this.logo = $("div.logo img");
     }
