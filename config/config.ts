@@ -15,11 +15,12 @@ export const config: Config = {
     capabilities: {
         browserName: "chrome",
         chromeOptions:{
-            binary:"/var/jenkins_home/tools/chrome-linux",
-            args:["--headless", "--no-sandbox", "--disable-gpu", "--remote-debugging-port=4444"]
+            //binary: "/home/deloitte/Downloads/chrome-linux",
+            args:["--no-sandbox", "--disable-gpu"],// "--disable-dev-shm-usage", "--remote-debugging-port=4444"],
+	    detach: true
         }
     },
-    seleniumServerJar: "/var/jenkins_home/workspace/PipeLine Hello World/node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-3.141.59.jar",
+    //seleniumServerJar: "/var/jenkins_home/workspace/PipeLine Hello World/node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-3.141.59.jar",
     
     framework: "custom",
     frameworkPath: require.resolve("protractor-cucumber-framework"),
