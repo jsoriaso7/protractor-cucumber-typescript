@@ -16,7 +16,7 @@ export const config: Config = {
         browserName: "chrome",
         chromeOptions:{
             //binary: "/home/deloitte/Downloads/chrome-linux",
-            args:["--no-sandbox", "--disable-gpu"],// "--disable-dev-shm-usage", "--remote-debugging-port=4444"],
+            args:["--headless", "--no-sandbox", "--disable-gpu"],// "--disable-dev-shm-usage", "--remote-debugging-port=4444"],
 	    detach: true
         }
     },
