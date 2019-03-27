@@ -13,12 +13,19 @@ export const config: Config = {
     baseUrl: "https://www.google.com",
 
     capabilities: {
-        browserName: "chrome",
-        chromeOptions:{
+	browserName: "firefox",
+	firefoxOptions: {
+		args: ['--headless']
+	},
+	'moz:firefoxOptions':{
+		args: ['--headless']
+	}
+	//browserName: "chrome",
+        //chromeOptions:{
             //binary: "/home/deloitte/Downloads/chrome-linux",
-            args:["--headless", "--no-sandbox", "--disable-gpu"],// "--disable-dev-shm-usage", "--remote-debugging-port=4444"],
-	    detach: true
-        }
+            //args:["--headless", "--no-sandbox", "--disable-gpu"],// "--disable-dev-shm-usage", "--remote-debugging-port=4444"],
+	    //detach: true
+        //}
     },
     //seleniumServerJar: "/var/jenkins_home/workspace/PipeLine Hello World/node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-3.141.59.jar",
     
