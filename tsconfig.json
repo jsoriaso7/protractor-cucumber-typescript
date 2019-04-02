@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "./dist/out-tsc",
         "module": "commonjs",
         "target": "es6",
         "moduleResolution": "node",
@@ -14,6 +16,7 @@
     },
     "exclude": [
         "node_modules",
-        "typescript"
+        "typescript",
+        "dist"
     ]
 }
